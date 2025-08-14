@@ -6,7 +6,7 @@ const mariadb = require('mariadb');
 const golos = require('golos-lib-js');
 
 // путь для lock  файла
-const path = '/home/igor/gates/golos.lock';
+const path = '/home/igor/gates/golos_history.lock';
 const opts = {};
 
 // параметры для истории голосового аккаунта
