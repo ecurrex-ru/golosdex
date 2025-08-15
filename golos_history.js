@@ -41,7 +41,7 @@ async function main() {
       while (accounts[i] != undefined)
       {
         // получаем историю по аккаунту
-        let history = golite.getHistory(host, accounts[i].account, from, limit);
+        let history = await golite.getHistory(host, accounts[i].account, from, limit);
         // обрабатываем историю
         await processHistory(history, accounts[i]);
         i++;
